@@ -1,0 +1,235 @@
+/* work sens from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=STIX+Two+Text:ital,wght@0,409;1,409&display=swap');
+/* shear style */
+*{
+    font-family: "Open Sans", sans-serif;
+    font-family: "Buenard", serif;
+    font-family: "STIX Two Text", serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    color: #fff;
+   font-size: 1.25rem;
+   background : rgb(255, 144, 14);
+   padding: 20px 25px;
+   cursor: pointer;
+   border: 0;
+}
+.text-light-gray{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+   
+    }
+.section-title{
+        font-size: 2.8rem;
+         font-weight: 800;
+         color: rgb(19, 19, 19);
+    
+    }
+
+
+/* header section */
+header{
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav> ul{
+    display: flex;
+
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+}
+/* banner style */
+.banner-content{
+    max-width: 840px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* msin style */
+/* teams section */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-contain{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+font-size: 2.8rem;
+}
+.teams-title .Quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .Features {
+    color: #ff900e;
+    font-weight: 700;
+}
+
+/* featyre section */
+.feature-injoy{
+    margin-top: 120px;
+    display: flex;
+    gap: 10px;
+}
+.feature-contentt .cardd{
+    padding: 30px;
+    margin-bottom: 20px;
+     border-radius: 8px;
+     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+     background: rgb(255, 255, 255);  
+}
+ .year{
+    border-radius: 8px;
+    color: white;
+    background: rgb(255, 144, 14);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+}
+.year h2{
+    font-size: 4rem;
+}
+.year p{
+    font-size: 1.5rem;
+}
+.feature-image img{
+    height: 70%;
+    margin-left: 100px;
+
+}
+
+/*fact section  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border: 1px solid rgb(255, 144, 14);
+   border-radius: 8px;
+   text-align: center; 
+   padding: 30px;
+}
+.facts-card-container .card-stats{
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+/* sponsers section */
+
+.sponsers{
+    text-align: center;
+}
+.sponser-name{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.sponser-name img{
+    width: 165px;
+}
+
+/* footer section */
+ .footer{
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    text-align: center;
+    width: 1200px;
+    height: 60px;
+    margin-left: 100px;
+   margin-top: 50px;
+   margin-bottom: 60px;
+    padding-top: 18px;
+    
+    
+    
+  
+ }
+
+/* responsive media uearry */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .teams-container, .facts-card-container,
+    .sponser-name,
+    .feature-injoy
+    {
+        flex-direction: column;
+
+    }
+    .feature-image img
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    .year{
+        position: static;
+        width: 270px;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+}
+/* medium devics */
+@media screen and (min-width:576px) and (max-width:1119px) {
+    header{
+        padding: 50px;
+    }
+    nav, .teams-container,
+    .feature-injoy,
+    .sponser-name{
+        flex-direction: column;
+
+    }
+}
